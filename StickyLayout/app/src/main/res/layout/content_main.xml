@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.me.silencedut.stickylayout.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stickyScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.silencedut.stickylayout.MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@android:color/black"/>
+            <include layout="@layout/sticky_layout"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1500dp"
+                android:src="@android:color/white"/>
+        </LinearLayout>
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/stickyTopFL"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            />
+        <TextView
+            android:id="@+id/stickyTopTv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@android:color/holo_red_light"
+            android:text="StickyView" />
+
+    </FrameLayout>
+</com.me.silencedut.stickylayout.StickyScrollView>
